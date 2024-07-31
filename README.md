@@ -1,5 +1,12 @@
 # ALPHA SERIES MENU
 
+1. [Purpose/Overview](#purposeoverview)
+2. [Features](#features)
+3. [Running the Program](#running-the-program)
+   - [How to Run the Menu Program](#how-to-run-the-menu-program)
+   - [How to Run a Separate .sh File](#how-to-run-a-separate-sh-file)
+4. [Disclaimer](#disclaimer)
+
 ## Purpose/Overview
 
 The ALPHA SERIES MENU is designed to facilitate control over the Alpha Series cameras using a terminal-based interface. This menu, created based on an SDK, is located in the `/bin` directory and is compatible with every Alpha camera model. It provides specialized menu options tailored to each camera model, allowing users to efficiently manage camera settings and operations.
