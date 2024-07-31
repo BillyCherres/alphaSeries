@@ -37,3 +37,36 @@ This program is designed to run on an Ubuntu system
    
    ```bash
    cd Desktop/Linux-SDK-Official/out/bin
+3. Set the LD_LIBRARY_PATH to include the path to the SDK libraries.
+   ```bash
+   export LD_LIBRARY_PATH=~/Desktop/Linux-SDK-Official/out/lib
+4. Execute the menu program.
+   ```bash
+   ./menu.sh
+
+### How to Run a Separate .sh File
+
+To run a `.sh` file outside of the menu program, you need to open and authenticate the session before executing the script. After running the script, it is important to close the session. Follow these steps:
+
+1. Open a terminal window.
+2. Navigate to the directory containing the menu script. Make sure the SDK file is located on your Desktop. Adjust the path if necessary.
+   
+   ```bash
+   cd Desktop/Linux-SDK-Official/out/bin
+3. Set the LD_LIBRARY_PATH to include the path to the SDK libraries.
+   ```bash
+   export LD_LIBRARY_PATH=~/Desktop/Linux-SDK-Official/out/lib
+4. open session
+   ```bash
+   ./control open
+5. authenticate session
+   ``` bash
+   ./control auth
+6. Execute the .sh file (any .sh file in the `/bin` directory)
+   ```bash
+   ./iso-setting.sh
+7. Close session
+   ``` bash
+   ./control close
+
+   
