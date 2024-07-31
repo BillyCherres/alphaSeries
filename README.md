@@ -5,7 +5,12 @@
 3. [Running the Program](#running-the-program)
    - [How to Run the Menu Program](#how-to-run-the-menu-program)
    - [How to Run a Separate .sh File](#how-to-run-a-separate-sh-file)
-4. [Disclaimer](#disclaimer)
+
+4.[Adding More Features](#adding-more-features)
+   - [File](#file)
+   - [Reference](#reference)
+5.  [Disclaimer](#disclaimer)
+6. [Contact Information](#contact-information)
 
 ## Purpose/Overview
 
