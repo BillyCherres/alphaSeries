@@ -69,4 +69,10 @@ To run a `.sh` file outside of the menu program, you need to open and authentica
    ``` bash
    ./control close
 
-   
+**Note:** If you prefer to run the `.sh` file without the menu program, you can manually uncomment the `./control open`, `./control auth`, and `./control close` commands in the respective `.sh` file to automate the process.
+
+## Disclaimer
+This menu has been tested on three Alpha camera models and is assumed to be compatible with every Alpha camera. The observed compatibility and supported features are as follows:
+- **A7R5**  All 15 menu options are supported.
+- **A7R4** 12 menu options are supported; 13 options are supported if an optical zoom lens is connected.
+- **A93**  14 menu options are supported; 15 options are supported if an optical zoom lens is connected.
