@@ -98,3 +98,21 @@ This menu has been tested on three Alpha camera models and is assumed to be comp
 - **A7R5**  All 15 menu options are supported.
 - **A7R4** 12 menu options are supported; 13 options are supported if an optical zoom lens is connected.
 - **A93**  14 menu options are supported; 15 options are supported if an optical zoom lens is connected.
+
+## Adding More Features
+
+### File
+
+- **Create `.sh` file**: To add new features, create a new `.sh` file in the `/bin` directory.
+- **Refer to existing `.sh` files**: Examine existing `.sh` files in the `/bin` directory to understand how to structure your script and implement functionality.
+
+### Reference
+
+- **Sony Camera Features**: Refer to [Sony's Camera Help Guide](https://helpguide.sony.net/ilc/2230/v1/en/contents/TP0003027198.html) to better understand the camera features and settings.
+- **Camera Control PTP 3 Reference**: Consult the `Camera Control PTP 3 Reference.pdf` to understand the functions available for your camera model.
+
+## Contact Information
+
+For any questions or support, please reach out to:
+
+**School Email:** cherresb@grinnell.edu
