@@ -1,5 +1,6 @@
 # ALPHA SERIES MENU
 
+## Table of Contents
 1. [Purpose/Overview](#purposeoverview)
 2. [Features](#features)
 3. [Running the Program](#running-the-program)
