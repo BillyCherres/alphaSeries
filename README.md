@@ -16,20 +16,35 @@ The ALPHA SERIES MENU is designed to facilitate control over the Alpha Series ca
 The menu offers up to 15 different options, depending on camera model compatibility:
 
 - **Change Camera Exposure Mode**
+     - Currently Changes the Exposure mode to Manual (M) on the Dial
 - **Change Camera Zoom Settings**
+     - Zoom in for 6 seconds then Zooms back out for 6 seconds
 - **Shoot an Image and Retrieve It**
+     - Shoots an image then uploads image to host computer
 - **MTP (Media Transfer Protocol)**
-- **Date-Time Configuration**
+     - Gives a list of pictures or videos on the camera, then offeres user to upload onto host computer
+- **Date-Time Configuration** 
+     - Shows the date-time when runtime of command is executed
 - **Get Property Values**
+     - Gives option to get a specific property value or get all property values of the camera
 - **Single Shoot Continuously**
+     - Do single shoot multiple times
 - **Image ID Management**
+     - Get the image ID of a specific image
 - **ISO Setting**
+     - Set the ISO setting
 - **Shutter Speed Setting**
+     - Set the shutter speed setting
 - **Still File Format Setting**
+     - Set the still file format setting
 - **SD Card Format Setting**
+     - Do an SD card Format on either slot 1 or 2
 - **Movie Record Setting**
+     - Record a movie
 - **Save Settings**
+     - Save settings of camera to a .dat file
 - **Load Settings**
+     - upload camera setting from a .dat file
 
 ## Running the Program
 
