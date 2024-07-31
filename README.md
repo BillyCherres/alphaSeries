@@ -56,13 +56,13 @@ To run a `.sh` file outside of the menu program, you need to open and authentica
 3. Set the LD_LIBRARY_PATH to include the path to the SDK libraries.
    ```bash
    export LD_LIBRARY_PATH=~/Desktop/Linux-SDK-Official/out/lib
-4. open session
+4. Open Session
    ```bash
    ./control open
-5. authenticate session
+5. Authenticate Session
    ``` bash
    ./control auth
-6. Execute the .sh file (any .sh file in the `/bin` directory)
+6. Execute the .sh File (any .sh file in the `/bin` directory)
    ```bash
    ./iso-setting.sh
 7. Close session
