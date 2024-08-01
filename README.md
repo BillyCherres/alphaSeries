@@ -55,7 +55,7 @@ The menu offers up to 15 different options, depending on camera model compatibil
 
 ### System Requirements
 
-This program is designed to run on an Ubuntu system
+This program is designed to run on an Linux 64x Desktop
 
 ### How to Run the Menu Program
 
