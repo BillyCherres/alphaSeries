@@ -39,14 +39,14 @@ echo "[authentication]"
 ./control auth $@
 
 ## ENSURING PERMISSION ##
-: << 'Comment'
+
 for file in *.sh; do
      chmod +x "$file"
 done
 
 chmod +x control
 
-
+: << 'Comment'
 chmod +x ./change_camera_settings_expmode.sh
 chmod +x ./change_camera_settings_zoom.sh
 chmod +x ./shoot_an_image_and_get_it.sh
@@ -70,11 +70,55 @@ sleep 1
 out=$(cat "$FIFO")
 exp=$(echo "$out" | grep -o 'dataset CurrentValue: [0-9A-F]*' | awk '{print $NF}')
 
+
+if [[ "$exp" -eq "01" ]]; then
+	zoomV="D25A"
+elif [[ "$exp" -eq "00" ]]; then
+	# switch to digital zoom
+	./control send --op=0x9205 --p1=0xD25F --size=2 --data=0x04 "$@"
+fi
+
+echo "waiting the changing"
+cond1="XXXX"
+while [ "$cond1" != "04" ]
+do
+    ./control get 0xD25F $@ --of=$FIFO &
+    out=`cat $FIFO`
+    echo $out
+    cond1=`get_device_property_value "CurrentValue: " "$out"`
+done
+
+
+echo "waiting the changing"
+exp="XXXX"
+start_time=$(date +%s)
+
+while [ "$exp" != "01" ]
+do
+    ./control get 0xD25B $@ --of=$FIFO &
+    out=`cat $FIFO`
+    echo $out
+    exp=`get_device_property_value "CurrentValue: " "$out"`
+    
+    # Check if the loop has been running for more than 7 seconds
+    current_time=$(date +%s)
+    elapsed_time=$(( current_time - start_time ))
+    if [ $elapsed_time -ge 7 ]; then
+        echo "Time limit of 7 seconds reached, breaking the loop."
+        break
+    fi
+
+done
+
+
+echo "$exp"
+
 if [[ "$exp" -eq "01" ]]; then
 zoomV="D25A"
-else
+else 
 zoomV="null"
 fi
+
 echo "$zoomV"
 
 
@@ -188,3 +232,4 @@ done
 
 ## close session
 ./control close $@
+
