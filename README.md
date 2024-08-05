@@ -63,10 +63,10 @@ This program is designed to run on a Linux 64x Desktop
 2. Navigate to the directory containing the menu script. Make sure the SDK file is located on your Desktop. Adjust the path if necessary.
    
    ```bash
-   cd Desktop/Linux-SDK-Official/out/bin
+   cd Desktop/alphaSeries/Linux-SDK-Official/out/bin
 3. Set the LD_LIBRARY_PATH to include the path to the SDK libraries.
    ```bash
-   export LD_LIBRARY_PATH=~/Desktop/Linux-SDK-Official/out/lib
+   export LD_LIBRARY_PATH=~/Desktop/alphaSeries/Linux-SDK-Official/out/lib
 4. Execute the menu program.
    ```bash
    ./menu.sh
@@ -79,7 +79,7 @@ To run a `.sh` file outside of the menu program, you need to open and authentica
 2. Navigate to the directory containing the menu script. Make sure the SDK file is located on your Desktop. Adjust the path if necessary.
    
    ```bash
-   cd Desktop/Linux-SDK-Official/out/bin
+   cd Desktop/alphaSeries/Linux-SDK-Official/out/bin
 3. Set the LD_LIBRARY_PATH to include the path to the SDK libraries.
    ```bash
    export LD_LIBRARY_PATH=~/Desktop/alphaSeries/Linux-SDK-Official/out/lib
