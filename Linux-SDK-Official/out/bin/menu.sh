@@ -39,12 +39,14 @@ echo "[authentication]"
 ./control auth $@
 
 ## ENSURING PERMISSION ##
-
+: << 'Comment'
 for file in *.sh; do
      chmod +x "$file"
 done
 
-: << 'Comment'
+chmod +x control
+
+
 chmod +x ./change_camera_settings_expmode.sh
 chmod +x ./change_camera_settings_zoom.sh
 chmod +x ./shoot_an_image_and_get_it.sh
