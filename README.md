@@ -55,7 +55,7 @@ The menu offers up to 15 different options, depending on camera model compatibil
 
 ### System Requirements
 
-This program is designed to run on a Linux 64x Desktop
+Designed to run on both Linux 64-bit Desktop and Embedded 64-bit ARM NVIDIA Jetson operating systems.
 
 ### How to Run the Menu Program
 
