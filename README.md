@@ -9,8 +9,9 @@
 4. [Adding More Features](#adding-more-features)
    - [File](#file)
    - [Reference](#reference)
-5.  [Disclaimer](#disclaimer)
-6. [Contact Information](#contact-information)
+5. [Troubleshoot](troubleshooting errors)
+6. [Disclaimer](#disclaimer)
+7. [Contact Information](#contact-information)
 
 ## Purpose/Overview
 
@@ -97,6 +98,28 @@ To run a `.sh` file outside of the menu program, you need to open and authentica
    ./control close
 
 **Note:** If you prefer to run the `.sh` file without the menu program, you can manually uncomment the `./control open`, `./control auth`, and `./control close` commands in the respective `.sh` file to automate the process.
+
+
+## Troubleshooting Errors
+Here are solutions to some common errors that may arise when running this program. 
+- **Authentication Error** If there is an error with `./control auth`,(you visually see this error when session does not equal 0 in the terminal when you run `./control auth`),
+this is probably due to the program misunderstanding which usb port your alpha camera is plugged into.
+1.  Please go to the following directory
+``` bash
+cd Desktop/alphaSeries/Linux-SDK-Official/libremotecameracontrol/ports
+```
+2. Enter the ports_usb.h file and check lines 11 and 12
+``` c++
+//#define BULK_MAX_PACKET_SIZE (512) // USB 2.0
+#define BULK_MAX_PACKET_SIZE (1024) // USB 3.0
+```
+3. Uncomment the line of code that is compatible with your usb port. Then re-run:
+```bash
+./control open
+./control auth
+```
+You should see `session=0` which indicates a succsesful open session
+
 
 ## Disclaimer
 This menu has been tested on three Alpha camera models and is assumed to be compatible with every Alpha camera. The observed compatibility and supported features are as follows:
