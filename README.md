@@ -9,7 +9,7 @@
 4. [Adding More Features](#adding-more-features)
    - [File](#file)
    - [Reference](#reference)
-5. [Troubleshoot](troubleshooting-errors)
+5. [Troubleshoot](#troubleshooting-errors)
 6. [Disclaimer](#disclaimer)
 7. [Contact Information](#contact-information)
 
