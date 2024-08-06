@@ -120,7 +120,23 @@ cd Desktop/alphaSeries/Linux-SDK-Official/libremotecameracontrol/ports
 ```
 You should see `session=0` which indicates a succsesful open session
 
-
+- **Permission Error** Before running the menu program, ensure every file in the bin has executable permission. 
+1. To do so, enter the directory
+```bash
+cd Desktop/alphaSeries/Linux-SDK-Official/out/bin
+```
+2. Give permission to the permission.sh file
+```bash
+chmod +x permission.sh
+```
+3. Run the permission.sh file
+```bash
+./permission.sh
+```
+4. Every file in `/bin` should have executable permission. now run the program
+```bash
+./menu.sh
+```
 ## Disclaimer
 This menu has been tested on three Alpha camera models and is assumed to be compatible with every Alpha camera. The observed compatibility and supported features are as follows:
 - **A7R5:**  All 15 menu options are supported.
