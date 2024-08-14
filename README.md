@@ -3,15 +3,16 @@
 ## Table of Contents
 1. [Purpose/Overview](#purposeoverview)
 2. [Features](#features)
-3. [Running the Program](#running-the-program)
+3. [Build on ARM 64 bit Embedded Environment][build-on-arm-64-bit-embedded-environment]
+4. [Running the Program](#running-the-program)
    - [How to Run the Menu Program](#how-to-run-the-menu-program)
    - [How to Run a Separate .sh File](#how-to-run-a-separate-sh-file)
-4. [Adding More Features](#adding-more-features)
+5. [Adding More Features](#adding-more-features)
    - [File](#file)
    - [Reference](#reference)
-5. [Troubleshoot](#troubleshooting-errors)
-6. [Disclaimer](#disclaimer)
-7. [Contact Information](#contact-information)
+6. [Troubleshoot](#troubleshooting-errors)
+7. [Disclaimer](#disclaimer)
+8. [Contact Information](#contact-information)
 
 ## Purpose/Overview
 
@@ -54,11 +55,31 @@ The menu offers up to 15 different options, depending on camera model compatibil
 
 ## Running the Program
 
-### System Requirements
+#### System Requirements
 
-Designed to run on both Linux 64-bit Desktop and Embedded 64-bit ARM NVIDIA Jetson operating systems.
-
-### How to Run the Menu Program
+Designed to run on both Linux 64x Desktop and Embedded 64-bit ARM NVIDIA Jetson operating systems.
+### Build On ARM 64 Bit Embedded Environment
+**Please follow these steps bellow in order to run the program in an ARM 64-bit Embedded Environment**
+1. Navigate to the `libusb` directory of the project
+   ```bash
+   $ cd Desktop/alphaSeries/Linux-SDK-Official/libusb
+   ```
+2. Execute the following .sh file
+   ```bash
+   $ /autogen.sh
+   ```
+3. Execute Make
+   ```bash
+   $ make
+   ```
+4. Execute make install
+   ```ba sh
+   $ sudo make install
+   ```
+5. Your Embedded ARM environment can now succesfully build this project. Please proceed to [How to Run the Menu Program](#how-to-run-the-menu-program)
+### Running program on Linux 64x Operating System
+**No Extra steps needed to build the project in this environment. Please proceed to [How to Run the Menu Program](#how-to-run-the-menu-program)**
+#### How to Run the Menu Program
 
 1. Open a terminal window.
 2. Navigate to the directory containing the menu script. Make sure the SDK file is located on your Desktop. Adjust the path if necessary.
@@ -72,7 +93,7 @@ Designed to run on both Linux 64-bit Desktop and Embedded 64-bit ARM NVIDIA Jets
    ```bash
    ./menu.sh
 
-### How to Run a Separate .sh File
+#### How to Run a Separate .sh File
 
 To run a `.sh` file outside of the menu program, you need to open and authenticate the session before executing the script. After running the script, it is important to close the session. Follow these steps:
 
@@ -161,3 +182,5 @@ This menu has been tested on 4 Alpha camera models and is assumed to be compatib
 For any questions or support, please reach out to:
 
 **School Email:** cherresb@grinnell.edu
+
+[build-on-arm-64-bit-embedded-environment]: #build-on-arm-64-bit-embedded-environment
