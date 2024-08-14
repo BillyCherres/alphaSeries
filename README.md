@@ -138,8 +138,9 @@ chmod +x permission.sh
 ./menu.sh
 ```
 ## Disclaimer
-This menu has been tested on three Alpha camera models and is assumed to be compatible with every Alpha camera. The observed compatibility and supported features are as follows:
+This menu has been tested on 4 Alpha camera models and is assumed to be compatible with every Alpha camera. The observed compatibility and supported features are as follows:
 - **A7R5:**  All 15 menu options are supported.
+- **LR1:**  All 15 menu options are supported.
 - **A7R4:** 12 menu options are supported; 13 options are supported if an optical zoom lens is connected.
 - **A7M4:**  14 menu options are supported; 15 options are supported if an optical zoom lens is connected.
 
