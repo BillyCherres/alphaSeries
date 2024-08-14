@@ -41,8 +41,10 @@ int ports_usb_impl::open() {
     close();
     return SOCC_ERROR_USB_INIT;
   }
-  libusb_set_option(context, LIBUSB_OPTION_LOG_LEVEL, LIBUSB_LOG_LEVEL_ERROR);
-
+    
+//  libusb_set_option(context, LIBUSB_OPTION_LOG_LEVEL, LIBUSB_LOG_LEVEL_ERROR);
+    libusb_set_debug(context, LIBUSB_LOG_LEVEL_ERROR);
+    
   ret = pthread_attr_init(&thread_attr);
   if (ret != 0) {
     close();
