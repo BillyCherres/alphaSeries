@@ -1,4 +1,4 @@
-# ALPHA SERIES MENU
+# SONY ALPHA SERIES MENU
 
 ## Table of Contents
 1. [Purpose/Overview](#purposeoverview)
