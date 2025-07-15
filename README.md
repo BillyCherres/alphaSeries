@@ -16,7 +16,7 @@
 
 ## Purpose/Overview
 
-The ALPHA SERIES MENU is designed to facilitate control over the Alpha Series cameras using a terminal-based interface. This menu, created based on an SDK, is located in the `/bin` directory and is compatible with every Alpha camera model. It provides specialized menu options tailored to each camera model, allowing users to efficiently manage camera settings and operations.
+The SONY ALPHA SERIES MENU is designed to facilitate control over the Alpha Series cameras using a terminal-based interface. This menu, created based on an SDK, is located in the `/bin` directory and is compatible with every Alpha camera model. It provides specialized menu options tailored to each camera model, allowing users to efficiently manage camera settings and operations.
 
 ## Features
 
